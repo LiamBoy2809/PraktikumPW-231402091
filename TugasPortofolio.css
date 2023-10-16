@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.dark-mode-toggle input {
+    display: none;
+}
+
+.dark-mode-toggle label {
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 25px;
+    display: block;
+    position: relative;
+}
+
+.dark-mode-toggle label::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s;
+}
+
+input:checked + label {
+    background-color: #ccc;
+}
+
+input:checked + label::before {
+    transform: translateX(25px);
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+
+img.tengah {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wow {
+    text-align: center;
+   font-size: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.hasil {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.web1 {
+    width: 40%;
+    margin-bottom: 14px;
+    margin-right: 14px;
+    border: 2px solid;
+    text-align: center;
+}
+
+.foto1 {
+    width: 100%;
+}
+
+.web2 {
+    width: 40%;
+    margin-bottom: 14px;
+    border: 2px solid;
+    text-align: center;
+}
+
+.foto2 {
+    width: 100%;
+}
+
+.web3 {
+    width: 60%;
+    text-align: center;
+    border: 2px solid;
+}
+
+.foto3 {
+    width: 100%;
+}
+
+.web4 {
+    width: 20%;
+    margin-bottom: 20px;
+    border: 2px solid;
+    text-align: center;
+}
+
+.foto4 {
+    width: 100%;
+}
+
+.foto5 {
+    position: absolute;
+    left:500px;
+    width: 5%;
+}
+
+.foto6 {
+    position: absolute;
+    right: 500px;
+    width: 5%
+}
+
+.foto7 {
+    position: absolute;
+    right: 720px;
+    width: 5%;
+}
+
+.hp {
+    text-align: center;
+    border: 2px solid;
+    margin-left: 650px;
+    margin-right: 650px;
+}
+
+.ig {
+    text-align: left;
+    left: 500px;
+}
